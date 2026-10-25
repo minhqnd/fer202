@@ -1,541 +1,518 @@
 {
-    "categories": [
+  "categories": [
+    {
+      "id": 1,
+      "name": "Burger",
+      "slug": "burger",
+      "description": "Các món bánh burger thơm ngon với thịt nướng đậm đà, phô mai béo ngậy và rau tươi.",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Gà Rán",
+      "slug": "ga-ran",
+      "description": "Gà rán giòn rụm bên ngoài, mọng nước đậm vị bên trong với nhiều loại sốt hấp dẫn.",
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Pizza",
+      "slug": "pizza",
+      "description": "Pizza đế giòn xốp truyền thống ngập tràn phô mai mozzarella và các loại nhân hảo hạng.",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Món Ăn Kèm",
+      "slug": "mon-an-kem",
+      "description": "Khoai tây chiên, mực vòng chiên giòn, phô mai que và các món khai vị tuyệt đỉnh.",
+      "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Đồ Uống & Tráng Miệng",
+      "slug": "do-uong-trang-mieng",
+      "description": "Nước ngọt có ga, trà trái cây thanh mát, sữa lắc và các loại kem béo ngậy.",
+      "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 6,
+      "name": "Combo Tiết Kiệm",
+      "slug": "combo-tiet-kiem",
+      "description": "Combo kết hợp đồ ăn chính, món ăn kèm và đồ uống với mức giá siêu ưu đãi.",
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "name": "Burger Bò Phô Mai Cổ Điển",
+      "categoryId": 1,
+      "price": 65000,
+      "originalPrice": 75000,
+      "rating": 4.8,
+      "calories": 520,
+      "preparationTime": "10-15 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+      "description": "Bánh mì nướng bơ kẹp thịt bò Úc nướng lửa, phô mai Cheddar tan chảy, xà lách tươi, cà chua và sốt burger đặc trưng.",
+      "ingredients": [
+        "Bò Úc",
+        "Phô mai Cheddar",
+        "Xà lách",
+        "Cà chua",
+        "Sốt đặc biệt"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Burger Gà Giòn Cay Sốt Mayo",
+      "categoryId": 1,
+      "price": 59000,
+      "originalPrice": 69000,
+      "rating": 4.7,
+      "calories": 480,
+      "preparationTime": "10-15 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80",
+      "description": "Ức gà tẩm ướp cay chiên giòn rụm kết hợp cùng bắp cải xắt sợi, dưa chuột muối và sốt mayonnaise béo bùi.",
+      "ingredients": [
+        "Thịt gà phi lê",
+        "Bột chiên giòn",
+        "Sốt cay",
+        "Sốt mayonnaise",
+        "Xà lách"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Burger Bò Đôi Nấm Sốt Truffle",
+      "categoryId": 1,
+      "price": 95000,
+      "originalPrice": 115000,
+      "rating": 4.9,
+      "calories": 680,
+      "preparationTime": "15-20 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80",
+      "description": "2 lớp thịt bò nướng thơm lừng hòa quyện với nấm xào bơ tỏi và sốt dầu nấm truffle thượng hạng thơm nức mũi.",
+      "ingredients": [
+        "2 miếng bò nướng",
+        "Nấm xào",
+        "Sốt nấm truffle",
+        "Phô mai Thụy Sĩ"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Burger Tôm Hoàng Gia",
+      "categoryId": 1,
+      "price": 69000,
+      "originalPrice": 79000,
+      "rating": 4.6,
+      "calories": 440,
+      "preparationTime": "10-15 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
+      "description": "Thịt tôm tươi xay nguyên miếng giòn sần sật bọc bột chiên xù vàng óng, ăn kèm sốt Tartar chua thanh thanh giải ngấy.",
+      "ingredients": [
+        "Thịt tôm tươi",
+        "Bột chiên xù",
+        "Sốt Tartar",
+        "Xà lách",
+        "Cà chua"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Gà Rán Giòn Cay (2 Miếng)",
+      "categoryId": 2,
+      "price": 72000,
+      "originalPrice": 82000,
+      "rating": 4.9,
+      "calories": 580,
+      "preparationTime": "12-15 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
+      "description": "2 miếng gà tẩm ướp công thức bí truyền 11 loại gia vị, vỏ ngoài vàng rụm giòn tan, thịt bên trong mềm ngọt mọng nước.",
+      "ingredients": [
+        "Đùi/Má đùi gà",
+        "Bột tẩm đặc chế",
+        "Ớt bột cay",
+        "Gia vị bí truyền"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cánh Gà Sốt Bơ Tỏi Mật Ong (4 Miếng)",
+      "categoryId": 2,
+      "price": 85000,
+      "originalPrice": 99000,
+      "rating": 4.8,
+      "calories": 620,
+      "preparationTime": "15 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
+      "description": "Cánh gà chiên giòn đảo đều trong chảo sốt bơ tỏi vàng thơm và mật ong hoa rừng ngọt dịu đậm đà khó cưỡng.",
+      "ingredients": [
+        "Cánh gà tươi",
+        "Mật ong tự nhiên",
+        "Bơ nhạt",
+        "Tỏi phi",
+        "Mè rang"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Gà Viên Popcorn Giòn Rụm",
+      "categoryId": 2,
+      "price": 45000,
+      "originalPrice": 50000,
+      "rating": 4.5,
+      "calories": 360,
+      "preparationTime": "8-10 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80",
+      "description": "Những viên thịt gà rút xương nhỏ xinh chiên vàng ruộm, vị mằn mặn giòn tan, thích hợp vừa xem phim vừa nhâm nhi.",
+      "ingredients": ["Ức gà", "Bột chiên xù", "Muối tiêu", "Bột tỏi"]
+    },
+    {
+      "id": 8,
+      "name": "Pizza Pepperoni Xúc Xích Ý",
+      "categoryId": 3,
+      "price": 149000,
+      "originalPrice": 169000,
+      "rating": 4.9,
+      "calories": 850,
+      "preparationTime": "20-25 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80",
+      "description": "Pizza đế tươi phủ lớp sốt cà chua San Marzano, ngập tràn xúc xích cay Pepperoni và phô mai Mozzarella béo ngậy nướng xém cạnh.",
+      "ingredients": [
+        "Đế bánh nướng",
+        "Xúc xích Pepperoni",
+        "Phô mai Mozzarella",
+        "Sốt cà chua Ý"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Pizza Hải Sản Sốt Tiêu Đen",
+      "categoryId": 3,
+      "price": 169000,
+      "originalPrice": 189000,
+      "rating": 4.7,
+      "calories": 820,
+      "preparationTime": "20-25 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80",
+      "description": "Tôm sú, mực tươi, thanh cua phối hợp cùng ớt chuông, hành tây trên nền phô mai béo và sốt tiêu đen cay nồng thơm lừng.",
+      "ingredients": [
+        "Tôm sú",
+        "Mực tươi",
+        "Thanh cua",
+        "Ớt chuông",
+        "Phô mai Mozzarella",
+        "Sốt tiêu đen"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Khoai Tây Chiên Lắc Phô Mai",
+      "categoryId": 4,
+      "price": 35000,
+      "originalPrice": 40000,
+      "rating": 4.8,
+      "calories": 320,
+      "preparationTime": "5-8 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80",
+      "description": "Khoai tây cọng Bỉ chiên vàng giòn rụm không bị ỉu, lắc cùng bột phô mai cam béo mặn thơm ngậy.",
+      "ingredients": ["Khoai tây Bỉ", "Bột phô mai", "Dầu thực vật"]
+    },
+    {
+      "id": 11,
+      "name": "Phô Mai Que Kéo Sợi (4 Que)",
+      "categoryId": 4,
+      "price": 42000,
+      "originalPrice": 48000,
+      "rating": 4.6,
+      "calories": 390,
+      "preparationTime": "8-10 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?auto=format&fit=crop&w=600&q=80",
+      "description": "Phô mai Mozzarella nguyên khối bọc vỏ vụn bánh mì chiên vàng, kéo dài sợi phô mai dai dai béo ngậy khi còn nóng hổi.",
+      "ingredients": [
+        "Phô mai Mozzarella",
+        "Trứng gà",
+        "Bột xù",
+        "Lá oregano khô"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Trà Đào Cam Sả Tươi Mát",
+      "categoryId": 5,
+      "price": 32000,
+      "originalPrice": 38000,
+      "rating": 4.8,
+      "calories": 140,
+      "preparationTime": "5 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80",
+      "description": "Nước cốt trà đen ủ lạnh kết hợp nước cam vắt nguyên chất, hương sả tự nhiên cùng những miếng đào ngâm giòn sần sật.",
+      "ingredients": ["Trà đen", "Cam tươi", "Sả cây", "Đào ngâm", "Đường phèn"]
+    },
+    {
+      "id": 13,
+      "name": "Coca-Cola Tươi Ướp Lạnh (Lon)",
+      "categoryId": 5,
+      "price": 20000,
+      "originalPrice": 22000,
+      "rating": 4.9,
+      "calories": 139,
+      "preparationTime": "2 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
+      "description": "Lon nước ngọt có ga Coca-Cola 320ml ướp lạnh, giải khát tức thì và đánh tan cảm giác ngấy mỡ.",
+      "ingredients": ["Nước có ga", "Đường mía", "Hương cola tự nhiên"]
+    },
+    {
+      "id": 14,
+      "name": "Kem Ốc Quế Dâu Tây Socola",
+      "categoryId": 5,
+      "price": 25000,
+      "originalPrice": 30000,
+      "rating": 4.7,
+      "calories": 210,
+      "preparationTime": "3 phút",
+      "isAvailable": true,
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80",
+      "description": "Ốc quế giòn thơm đựng kem tươi mềm mịn vị dâu tây phủ sốt socola Bỉ tan chảy rắc hạt đậu phộng giòn.",
+      "ingredients": [
+        "Kem tươi dâu tây",
+        "Vỏ ốc quế",
+        "Sốt socola",
+        "Đậu phộng rang"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Combo Solo No Nê (1 Người)",
+      "categoryId": 6,
+      "price": 99000,
+      "originalPrice": 125000,
+      "rating": 4.9,
+      "calories": 950,
+      "preparationTime": "12-15 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80",
+      "description": "Bao gồm: 01 Burger Bò Phô Mai + 01 Khoai Tây Chiên Lắc Phô Mai + 01 Ly Coca-Cola mát lạnh. Tiết kiệm hơn 25,000đ!",
+      "ingredients": ["Burger Bò Phô Mai", "Khoai tây chiên", "Coca-Cola"]
+    },
+    {
+      "id": 16,
+      "name": "Combo Bạn Thân (2-3 Người)",
+      "categoryId": 6,
+      "price": 189000,
+      "originalPrice": 240000,
+      "rating": 5.0,
+      "calories": 1600,
+      "preparationTime": "15-20 phút",
+      "isAvailable": true,
+      "isFeatured": true,
+      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80",
+      "description": "Bao gồm: 01 Burger Gà Giòn Cay + 02 Miếng Gà Rán Giòn Cay + 01 Khoai Tây Chiên + 02 Lon Nước Ngọt giải khát cực đã.",
+      "ingredients": [
+        "Burger Gà Giòn",
+        "2 Miếng Gà Rán",
+        "Khoai tây chiên",
+        "2 Nước ngọt"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@fastfood.vn",
+      "fullName": "Quản Trị Viên",
+      "phone": "0988888888",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "address": "Tòa nhà FPT, Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 2,
+      "username": "nguyenvana",
+      "email": "vana@gmail.com",
+      "fullName": "Nguyễn Văn An",
+      "phone": "0912345678",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
+      "address": "Số 123 Đường Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội"
+    },
+    {
+      "id": 3,
+      "username": "tranthibich",
+      "email": "bichth@gmail.com",
+      "fullName": "Trần Thị Bích",
+      "phone": "0934567890",
+      "role": "customer",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+      "address": "Số 45 Lê Duẩn, Quận 1, TP. Hồ Chí Minh"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "orderCode": "ORD-20261022-001",
+      "userId": 2,
+      "customerName": "Nguyễn Văn An",
+      "customerPhone": "0912345678",
+      "deliveryAddress": "Số 123 Đường Cầu Giấy, Phường Dịch Vọng, Cầu Giấy, Hà Nội",
+      "items": [
         {
-            "id": 1,
-            "name": "Burger",
-            "slug": "burger",
-            "description": "Các món bánh burger thơm ngon với thịt nướng đậm đà, phô mai béo ngậy và rau tươi.",
-            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+          "foodId": 1,
+          "name": "Burger Bò Phô Mai Cổ Điển",
+          "price": 65000,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
         },
         {
-            "id": 2,
-            "name": "Gà Rán",
-            "slug": "ga-ran",
-            "description": "Gà rán giòn rụm bên ngoài, mọng nước đậm vị bên trong với nhiều loại sốt hấp dẫn.",
-            "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+          "foodId": 10,
+          "name": "Khoai Tây Chiên Lắc Phô Mai",
+          "price": 35000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80"
         },
         {
-            "id": 3,
-            "name": "Pizza",
-            "slug": "pizza",
-            "description": "Pizza đế giòn xốp truyền thống ngập tràn phô mai mozzarella và các loại nhân hảo hạng.",
-            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            "id": 4,
-            "name": "Món Ăn Kèm",
-            "slug": "mon-an-kem",
-            "description": "Khoai tây chiên, mực vòng chiên giòn, phô mai que và các món khai vị tuyệt đỉnh.",
-            "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            "id": 5,
-            "name": "Đồ Uống & Tráng Miệng",
-            "slug": "do-uong-trang-mieng",
-            "description": "Nước ngọt có ga, trà trái cây thanh mát, sữa lắc và các loại kem béo ngậy.",
-            "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80"
-        },
-        {
-            "id": 6,
-            "name": "Combo Tiết Kiệm",
-            "slug": "combo-tiet-kiem",
-            "description": "Combo kết hợp đồ ăn chính, món ăn kèm và đồ uống với mức giá siêu ưu đãi.",
-            "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
+          "foodId": 13,
+          "name": "Coca-Cola Tươi Ướp Lạnh (Lon)",
+          "price": 20000,
+          "quantity": 2,
+          "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80"
         }
-    ],
-    "foods": [
+      ],
+      "subtotal": 205000,
+      "shippingFee": 15000,
+      "discountAmount": 20000,
+      "voucherCode": "FAST20K",
+      "totalAmount": 200000,
+      "paymentMethod": "COD",
+      "status": "DELIVERED",
+      "notes": "Xin thêm tương cà và tương ớt",
+      "createdAt": "2026-10-22T10:15:30.000Z"
+    },
+    {
+      "id": 2,
+      "orderCode": "ORD-20261022-002",
+      "userId": 3,
+      "customerName": "Trần Thị Bích",
+      "customerPhone": "0934567890",
+      "deliveryAddress": "Số 45 Lê Duẩn, Quận 1, TP. Hồ Chí Minh",
+      "items": [
         {
-            "id": 1,
-            "name": "Burger Bò Phô Mai Cổ Điển",
-            "categoryId": 1,
-            "price": 65000,
-            "originalPrice": 75000,
-            "rating": 4.8,
-            "calories": 520,
-            "preparationTime": "10-15 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
-            "description": "Bánh mì nướng bơ kẹp thịt bò Úc nướng lửa, phô mai Cheddar tan chảy, xà lách tươi, cà chua và sốt burger đặc trưng.",
-            "ingredients": [
-                "Bò Úc",
-                "Phô mai Cheddar",
-                "Xà lách",
-                "Cà chua",
-                "Sốt đặc biệt"
-            ]
+          "foodId": 16,
+          "name": "Combo Bạn Thân (2-3 Người)",
+          "price": 189000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80"
         },
         {
-            "id": 2,
-            "name": "Burger Gà Giòn Cay Sốt Mayo",
-            "categoryId": 1,
-            "price": 59000,
-            "originalPrice": 69000,
-            "rating": 4.7,
-            "calories": 480,
-            "preparationTime": "10-15 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80",
-            "description": "Ức gà tẩm ướp cay chiên giòn rụm kết hợp cùng bắp cải xắt sợi, dưa chuột muối và sốt mayonnaise béo bùi.",
-            "ingredients": [
-                "Thịt gà phi lê",
-                "Bột chiên giòn",
-                "Sốt cay",
-                "Sốt mayonnaise",
-                "Xà lách"
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Burger Bò Đôi Nấm Sốt Truffle",
-            "categoryId": 1,
-            "price": 95000,
-            "originalPrice": 115000,
-            "rating": 4.9,
-            "calories": 680,
-            "preparationTime": "15-20 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80",
-            "description": "2 lớp thịt bò nướng thơm lừng hòa quyện với nấm xào bơ tỏi và sốt dầu nấm truffle thượng hạng thơm nức mũi.",
-            "ingredients": [
-                "2 miếng bò nướng",
-                "Nấm xào",
-                "Sốt nấm truffle",
-                "Phô mai Thụy Sĩ"
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Burger Tôm Hoàng Gia",
-            "categoryId": 1,
-            "price": 69000,
-            "originalPrice": 79000,
-            "rating": 4.6,
-            "calories": 440,
-            "preparationTime": "10-15 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
-            "description": "Thịt tôm tươi xay nguyên miếng giòn sần sật bọc bột chiên xù vàng óng, ăn kèm sốt Tartar chua thanh thanh giải ngấy.",
-            "ingredients": [
-                "Thịt tôm tươi",
-                "Bột chiên xù",
-                "Sốt Tartar",
-                "Xà lách",
-                "Cà chua"
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Gà Rán Giòn Cay (2 Miếng)",
-            "categoryId": 2,
-            "price": 72000,
-            "originalPrice": 82000,
-            "rating": 4.9,
-            "calories": 580,
-            "preparationTime": "12-15 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80",
-            "description": "2 miếng gà tẩm ướp công thức bí truyền 11 loại gia vị, vỏ ngoài vàng rụm giòn tan, thịt bên trong mềm ngọt mọng nước.",
-            "ingredients": [
-                "Đùi/Má đùi gà",
-                "Bột tẩm đặc chế",
-                "Ớt bột cay",
-                "Gia vị bí truyền"
-            ]
-        },
-        {
-            "id": 6,
-            "name": "Cánh Gà Sốt Bơ Tỏi Mật Ong (4 Miếng)",
-            "categoryId": 2,
-            "price": 85000,
-            "originalPrice": 99000,
-            "rating": 4.8,
-            "calories": 620,
-            "preparationTime": "15 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80",
-            "description": "Cánh gà chiên giòn đảo đều trong chảo sốt bơ tỏi vàng thơm và mật ong hoa rừng ngọt dịu đậm đà khó cưỡng.",
-            "ingredients": [
-                "Cánh gà tươi",
-                "Mật ong tự nhiên",
-                "Bơ nhạt",
-                "Tỏi phi",
-                "Mè rang"
-            ]
-        },
-        {
-            "id": 7,
-            "name": "Gà Viên Popcorn Giòn Rụm",
-            "categoryId": 2,
-            "price": 45000,
-            "originalPrice": 50000,
-            "rating": 4.5,
-            "calories": 360,
-            "preparationTime": "8-10 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80",
-            "description": "Những viên thịt gà rút xương nhỏ xinh chiên vàng ruộm, vị mằn mặn giòn tan, thích hợp vừa xem phim vừa nhâm nhi.",
-            "ingredients": [
-                "Ức gà",
-                "Bột chiên xù",
-                "Muối tiêu",
-                "Bột tỏi"
-            ]
-        },
-        {
-            "id": 8,
-            "name": "Pizza Pepperoni Xúc Xích Ý",
-            "categoryId": 3,
-            "price": 149000,
-            "originalPrice": 169000,
-            "rating": 4.9,
-            "calories": 850,
-            "preparationTime": "20-25 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80",
-            "description": "Pizza đế tươi phủ lớp sốt cà chua San Marzano, ngập tràn xúc xích cay Pepperoni và phô mai Mozzarella béo ngậy nướng xém cạnh.",
-            "ingredients": [
-                "Đế bánh nướng",
-                "Xúc xích Pepperoni",
-                "Phô mai Mozzarella",
-                "Sốt cà chua Ý"
-            ]
-        },
-        {
-            "id": 9,
-            "name": "Pizza Hải Sản Sốt Tiêu Đen",
-            "categoryId": 3,
-            "price": 169000,
-            "originalPrice": 189000,
-            "rating": 4.7,
-            "calories": 820,
-            "preparationTime": "20-25 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80",
-            "description": "Tôm sú, mực tươi, thanh cua phối hợp cùng ớt chuông, hành tây trên nền phô mai béo và sốt tiêu đen cay nồng thơm lừng.",
-            "ingredients": [
-                "Tôm sú",
-                "Mực tươi",
-                "Thanh cua",
-                "Ớt chuông",
-                "Phô mai Mozzarella",
-                "Sốt tiêu đen"
-            ]
-        },
-        {
-            "id": 10,
-            "name": "Khoai Tây Chiên Lắc Phô Mai",
-            "categoryId": 4,
-            "price": 35000,
-            "originalPrice": 40000,
-            "rating": 4.8,
-            "calories": 320,
-            "preparationTime": "5-8 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80",
-            "description": "Khoai tây cọng Bỉ chiên vàng giòn rụm không bị ỉu, lắc cùng bột phô mai cam béo mặn thơm ngậy.",
-            "ingredients": [
-                "Khoai tây Bỉ",
-                "Bột phô mai",
-                "Dầu thực vật"
-            ]
-        },
-        {
-            "id": 11,
-            "name": "Phô Mai Que Kéo Sợi (4 Que)",
-            "categoryId": 4,
-            "price": 42000,
-            "originalPrice": 48000,
-            "rating": 4.6,
-            "calories": 390,
-            "preparationTime": "8-10 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1531749668029-2db88e4276c7?auto=format&fit=crop&w=600&q=80",
-            "description": "Phô mai Mozzarella nguyên khối bọc vỏ vụn bánh mì chiên vàng, kéo dài sợi phô mai dai dai béo ngậy khi còn nóng hổi.",
-            "ingredients": [
-                "Phô mai Mozzarella",
-                "Trứng gà",
-                "Bột xù",
-                "Lá oregano khô"
-            ]
-        },
-        {
-            "id": 12,
-            "name": "Trà Đào Cam Sả Tươi Mát",
-            "categoryId": 5,
-            "price": 32000,
-            "originalPrice": 38000,
-            "rating": 4.8,
-            "calories": 140,
-            "preparationTime": "5 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80",
-            "description": "Nước cốt trà đen ủ lạnh kết hợp nước cam vắt nguyên chất, hương sả tự nhiên cùng những miếng đào ngâm giòn sần sật.",
-            "ingredients": [
-                "Trà đen",
-                "Cam tươi",
-                "Sả cây",
-                "Đào ngâm",
-                "Đường phèn"
-            ]
-        },
-        {
-            "id": 13,
-            "name": "Coca-Cola Tươi Ướp Lạnh (Lon)",
-            "categoryId": 5,
-            "price": 20000,
-            "originalPrice": 22000,
-            "rating": 4.9,
-            "calories": 139,
-            "preparationTime": "2 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80",
-            "description": "Lon nước ngọt có ga Coca-Cola 320ml ướp lạnh, giải khát tức thì và đánh tan cảm giác ngấy mỡ.",
-            "ingredients": [
-                "Nước có ga",
-                "Đường mía",
-                "Hương cola tự nhiên"
-            ]
-        },
-        {
-            "id": 14,
-            "name": "Kem Ốc Quế Dâu Tây Socola",
-            "categoryId": 5,
-            "price": 25000,
-            "originalPrice": 30000,
-            "rating": 4.7,
-            "calories": 210,
-            "preparationTime": "3 phút",
-            "isAvailable": true,
-            "isFeatured": false,
-            "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80",
-            "description": "Ốc quế giòn thơm đựng kem tươi mềm mịn vị dâu tây phủ sốt socola Bỉ tan chảy rắc hạt đậu phộng giòn.",
-            "ingredients": [
-                "Kem tươi dâu tây",
-                "Vỏ ốc quế",
-                "Sốt socola",
-                "Đậu phộng rang"
-            ]
-        },
-        {
-            "id": 15,
-            "name": "Combo Solo No Nê (1 Người)",
-            "categoryId": 6,
-            "price": 99000,
-            "originalPrice": 125000,
-            "rating": 4.9,
-            "calories": 950,
-            "preparationTime": "12-15 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80",
-            "description": "Bao gồm: 01 Burger Bò Phô Mai + 01 Khoai Tây Chiên Lắc Phô Mai + 01 Ly Coca-Cola mát lạnh. Tiết kiệm hơn 25,000đ!",
-            "ingredients": [
-                "Burger Bò Phô Mai",
-                "Khoai tây chiên",
-                "Coca-Cola"
-            ]
-        },
-        {
-            "id": 16,
-            "name": "Combo Bạn Thân (2-3 Người)",
-            "categoryId": 6,
-            "price": 189000,
-            "originalPrice": 240000,
-            "rating": 5.0,
-            "calories": 1600,
-            "preparationTime": "15-20 phút",
-            "isAvailable": true,
-            "isFeatured": true,
-            "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80",
-            "description": "Bao gồm: 01 Burger Gà Giòn Cay + 02 Miếng Gà Rán Giòn Cay + 01 Khoai Tây Chiên + 02 Lon Nước Ngọt giải khát cực đã.",
-            "ingredients": [
-                "Burger Gà Giòn",
-                "2 Miếng Gà Rán",
-                "Khoai tây chiên",
-                "2 Nước ngọt"
-            ]
+          "foodId": 12,
+          "name": "Trà Đào Cam Sả Tươi Mát",
+          "price": 32000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80"
         }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "username": "admin",
-            "email": "admin@fastfood.vn",
-            "fullName": "Quản Trị Viên",
-            "phone": "0988888888",
-            "role": "admin",
-            "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-            "address": "Tòa nhà FPT, Cầu Giấy, Hà Nội"
-        },
-        {
-            "id": 2,
-            "username": "nguyenvana",
-            "email": "vana@gmail.com",
-            "fullName": "Nguyễn Văn An",
-            "phone": "0912345678",
-            "role": "customer",
-            "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
-            "address": "Số 123 Đường Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội"
-        },
-        {
-            "id": 3,
-            "username": "tranthibich",
-            "email": "bichth@gmail.com",
-            "fullName": "Trần Thị Bích",
-            "phone": "0934567890",
-            "role": "customer",
-            "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
-            "address": "Số 45 Lê Duẩn, Quận 1, TP. Hồ Chí Minh"
-        }
-    ],
-    "orders": [
-        {
-            "id": 1,
-            "orderCode": "ORD-20261022-001",
-            "userId": 2,
-            "customerName": "Nguyễn Văn An",
-            "customerPhone": "0912345678",
-            "deliveryAddress": "Số 123 Đường Cầu Giấy, Phường Dịch Vọng, Cầu Giấy, Hà Nội",
-            "items": [
-                {
-                    "foodId": 1,
-                    "name": "Burger Bò Phô Mai Cổ Điển",
-                    "price": 65000,
-                    "quantity": 2,
-                    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
-                },
-                {
-                    "foodId": 10,
-                    "name": "Khoai Tây Chiên Lắc Phô Mai",
-                    "price": 35000,
-                    "quantity": 1,
-                    "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80"
-                },
-                {
-                    "foodId": 13,
-                    "name": "Coca-Cola Tươi Ướp Lạnh (Lon)",
-                    "price": 20000,
-                    "quantity": 2,
-                    "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80"
-                }
-            ],
-            "subtotal": 205000,
-            "shippingFee": 15000,
-            "discountAmount": 20000,
-            "voucherCode": "FAST20K",
-            "totalAmount": 200000,
-            "paymentMethod": "COD",
-            "status": "DELIVERED",
-            "notes": "Xin thêm tương cà và tương ớt",
-            "createdAt": "2026-10-22T10:15:30.000Z"
-        },
-        {
-            "id": 2,
-            "orderCode": "ORD-20261022-002",
-            "userId": 3,
-            "customerName": "Trần Thị Bích",
-            "customerPhone": "0934567890",
-            "deliveryAddress": "Số 45 Lê Duẩn, Quận 1, TP. Hồ Chí Minh",
-            "items": [
-                {
-                    "foodId": 16,
-                    "name": "Combo Bạn Thân (2-3 Người)",
-                    "price": 189000,
-                    "quantity": 1,
-                    "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&q=80"
-                },
-                {
-                    "foodId": 12,
-                    "name": "Trà Đào Cam Sả Tươi Mát",
-                    "price": 32000,
-                    "quantity": 1,
-                    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&q=80"
-                }
-            ],
-            "subtotal": 221000,
-            "shippingFee": 20000,
-            "discountAmount": 0,
-            "voucherCode": null,
-            "totalAmount": 241000,
-            "paymentMethod": "MOMO",
-            "status": "PREPARING",
-            "notes": "Gà rán cho ít cay vì có trẻ nhỏ ăn",
-            "createdAt": "2026-10-22T15:40:00.000Z"
-        }
-    ],
-    "reviews": [
-        {
-            "id": 1,
-            "foodId": 1,
-            "userId": 2,
-            "userName": "Nguyễn Văn An",
-            "rating": 5,
-            "comment": "Burger thơm nức mũi, thịt bò dày mọng nước và phô mai chảy béo cực ngon! Giao hàng siêu nhanh.",
-            "createdAt": "2026-10-20T12:00:00.000Z"
-        },
-        {
-            "id": 2,
-            "foodId": 5,
-            "userId": 3,
-            "userName": "Trần Thị Bích",
-            "rating": 5,
-            "comment": "Gà rán giòn rụm không bị dầu mỡ nhiều, sốt chấm cay vừa phải rất ngon.",
-            "createdAt": "2026-10-21T18:30:00.000Z"
-        },
-        {
-            "id": 3,
-            "foodId": 10,
-            "userId": 2,
-            "userName": "Nguyễn Văn An",
-            "rating": 4,
-            "comment": "Khoai tây chiên vẫn còn ấm giòn khi giao đến, bột phô mai rất thơm.",
-            "createdAt": "2026-10-22T11:00:00.000Z"
-        }
-    ],
-    "vouchers": [
-        {
-            "id": 1,
-            "code": "FAST20K",
-            "title": "Giảm 20.000đ cho đơn từ 150.000đ",
-            "discountAmount": 20000,
-            "discountType": "FIXED",
-            "minOrderValue": 150000,
-            "expiryDate": "2026-12-31",
-            "isActive": true
-        },
-        {
-            "id": 2,
-            "code": "FREESHIP",
-            "title": "Miễn phí vận chuyển tối đa 30.000đ",
-            "discountAmount": 30000,
-            "discountType": "SHIPPING",
-            "minOrderValue": 100000,
-            "expiryDate": "2026-12-31",
-            "isActive": true
-        },
-        {
-            "id": 3,
-            "code": "BURGER10",
-            "title": "Giảm 10% tổng hóa đơn",
-            "discountPercent": 10,
-            "discountType": "PERCENT",
-            "minOrderValue": 80000,
-            "maxDiscount": 50000,
-            "expiryDate": "2026-12-31",
-            "isActive": true
-        }
-    ]
+      ],
+      "subtotal": 221000,
+      "shippingFee": 20000,
+      "discountAmount": 0,
+      "voucherCode": null,
+      "totalAmount": 241000,
+      "paymentMethod": "MOMO",
+      "status": "PREPARING",
+      "notes": "Gà rán cho ít cay vì có trẻ nhỏ ăn",
+      "createdAt": "2026-10-22T15:40:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "foodId": 1,
+      "userId": 2,
+      "userName": "Nguyễn Văn An",
+      "rating": 5,
+      "comment": "Burger thơm nức mũi, thịt bò dày mọng nước và phô mai chảy béo cực ngon! Giao hàng siêu nhanh.",
+      "createdAt": "2026-10-20T12:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "foodId": 5,
+      "userId": 3,
+      "userName": "Trần Thị Bích",
+      "rating": 5,
+      "comment": "Gà rán giòn rụm không bị dầu mỡ nhiều, sốt chấm cay vừa phải rất ngon.",
+      "createdAt": "2026-10-21T18:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "foodId": 10,
+      "userId": 2,
+      "userName": "Nguyễn Văn An",
+      "rating": 4,
+      "comment": "Khoai tây chiên vẫn còn ấm giòn khi giao đến, bột phô mai rất thơm.",
+      "createdAt": "2026-10-22T11:00:00.000Z"
+    }
+  ],
+  "vouchers": [
+    {
+      "id": 1,
+      "code": "FAST20K",
+      "title": "Giảm 20.000đ cho đơn từ 150.000đ",
+      "discountAmount": 20000,
+      "discountType": "FIXED",
+      "minOrderValue": 150000,
+      "expiryDate": "2026-12-31",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "code": "FREESHIP",
+      "title": "Miễn phí vận chuyển tối đa 30.000đ",
+      "discountAmount": 30000,
+      "discountType": "SHIPPING",
+      "minOrderValue": 100000,
+      "expiryDate": "2026-12-31",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "code": "BURGER10",
+      "title": "Giảm 10% tổng hóa đơn",
+      "discountPercent": 10,
+      "discountType": "PERCENT",
+      "minOrderValue": 80000,
+      "maxDiscount": 50000,
+      "expiryDate": "2026-12-31",
+      "isActive": true
+    }
+  ]
 }

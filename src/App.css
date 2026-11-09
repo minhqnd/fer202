@@ -1,0 +1,55 @@
+/* FastFood Clean Bootstrap Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #212529;
+  min-height: 100vh;
+}
+
+/* Card styling */
+.food-card {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  background: #ffffff;
+}
+
+.food-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.food-card-img-wrapper {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background-color: #f1f3f5;
+}
+
+.food-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Category card */
+.category-card {
+  cursor: pointer;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.category-card:hover {
+  border-color: #dc3545;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Clean Admin Stats Card */
+.admin-stats-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: #ffffff;
+}

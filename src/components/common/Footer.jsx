@@ -1,5 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+<<<<<<< HEAD
+=======
+import { Link } from 'react-router-dom';
+>>>>>>> 61cf0b5151a018e1f9a6b61fdcd38c83321c168f
 
 const Footer = () => {
   return (

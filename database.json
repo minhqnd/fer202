@@ -331,7 +331,7 @@
       "categoryId": 6,
       "price": 189000,
       "originalPrice": 240000,
-      "rating": 5.0,
+      "rating": 5,
       "calories": 1600,
       "preparationTime": "15-20 phút",
       "isAvailable": true,
@@ -351,6 +351,7 @@
       "id": 1,
       "username": "admin",
       "email": "admin@fastfood.vn",
+      "password": "0123456",
       "fullName": "Quản Trị Viên",
       "phone": "0988888888",
       "role": "admin",
@@ -360,6 +361,7 @@
     {
       "id": 2,
       "username": "nguyenvana",
+      "password": "0123456",
       "email": "vana@gmail.com",
       "fullName": "Nguyễn Văn An",
       "phone": "0912345678",
@@ -371,11 +373,23 @@
       "id": 3,
       "username": "tranthibich",
       "email": "bichth@gmail.com",
+      "password": "0123456",
       "fullName": "Trần Thị Bích",
       "phone": "0934567890",
       "role": "customer",
       "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
       "address": "Số 45 Lê Duẩn, Quận 1, TP. Hồ Chí Minh"
+    },
+    {
+      "username": "kotaikhoan0k",
+      "email": "eveyouynok@gmail.com",
+      "password": "0123456",
+      "fullName": "Hưng Mai",
+      "phone": "0941750920",
+      "role": "customer",
+      "avatar": "",
+      "address": "Nga An",
+      "id": 4
     }
   ],
   "orders": [
@@ -451,6 +465,72 @@
       "status": "PREPARING",
       "notes": "Gà rán cho ít cay vì có trẻ nhỏ ăn",
       "createdAt": "2026-10-22T15:40:00.000Z"
+    },
+    {
+      "orderCode": "ORD-1793088202409",
+      "userId": null,
+      "customerName": "Mai Khánh Hưng",
+      "customerPhone": "0941750920",
+      "deliveryAddress": "Nga An",
+      "items": [
+        {
+          "foodId": 3,
+          "name": "Burger Bò Đôi Nấm Sốt Truffle",
+          "price": 95000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "subtotal": 95000,
+      "shippingFee": 20000,
+      "discountAmount": 0,
+      "voucherCode": "",
+      "totalAmount": 115000,
+      "paymentMethod": "BANK_TRANSFER",
+      "status": "PENDING",
+      "notes": "",
+      "createdAt": "2026-10-27T08:03:22.409Z",
+      "id": 3
+    },
+    {
+      "orderCode": "ORD-1794292049059",
+      "userId": null,
+      "customerName": "Mai Khánh Hưng",
+      "customerPhone": "0941750920",
+      "deliveryAddress": "Nga An",
+      "items": [
+        {
+          "foodId": 3,
+          "name": "Burger Bò Đôi Nấm Sốt Truffle",
+          "price": 95000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "foodId": 2,
+          "name": "Burger Gà Giòn Cay Sốt Mayo",
+          "price": 59000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80"
+        },
+        {
+          "foodId": 15,
+          "name": "Combo Solo No Nê (1 Người)",
+          "price": 99000,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80"
+        }
+      ],
+      "subtotal": 253000,
+      "shippingFee": 20000,
+      "discountAmount": 0,
+      "voucherCode": "",
+      "totalAmount": 273000,
+      "paymentMethod": "COD",
+      "status": "PENDING",
+      "notes": "Bla Bla",
+      "createdAt": "2026-11-10T06:27:29.059Z",
+      "id": 4
     }
   ],
   "reviews": [

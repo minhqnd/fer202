@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Card, Form, Button, Alert } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { getUsers } from "../config/api";
@@ -7,12 +7,28 @@ function Login() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
-    username: "",
-    email: "",
+    identifier: "",
+    password: "",
   });
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const savedUser = localStorage.getItem("currentUser");
+    if (savedUser) {
+      try {
+        const user = JSON.parse(savedUser);
+        if (user.role === "admin") {
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
+      } catch {
+        localStorage.removeItem("currentUser");
+      }
+    }
+  }, [navigate]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -30,19 +46,22 @@ function Login() {
 
     try {
       const response = await getUsers();
+      const identifier = form.identifier.trim().toLowerCase();
 
       const user = response.data.find(
         (item) =>
-          item.username === form.username.trim() &&
-          item.email.toLowerCase() === form.email.trim().toLowerCase(),
+          (item.username?.toLowerCase() === identifier ||
+            item.email?.toLowerCase() === identifier) &&
+          item.password === form.password,
       );
 
       if (!user) {
-        setError("Tên đăng nhập hoặc email không chính xác.");
+        setError("Tên tài khoản/email hoặc mật khẩu không chính xác.");
         return;
       }
 
       localStorage.setItem("currentUser", JSON.stringify(user));
+      window.dispatchEvent(new Event("authChange"));
 
       if (user.role === "admin") {
         navigate("/admin");
@@ -66,24 +85,24 @@ function Login() {
 
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Tên đăng nhập</Form.Label>
+              <Form.Label>Tên tài khoản hoặc email</Form.Label>
               <Form.Control
-                name="username"
-                value={form.username}
+                name="identifier"
+                value={form.identifier}
                 onChange={handleChange}
-                placeholder="Nhập tên đăng nhập"
+                placeholder="Nhập tên tài khoản hoặc email"
                 required
               />
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Mật khẩu</Form.Label>
               <Form.Control
-                type="email"
-                name="email"
-                value={form.email}
+                type="password"
+                name="password"
+                value={form.password}
                 onChange={handleChange}
-                placeholder="Nhập email"
+                placeholder="Nhập mật khẩu"
                 required
               />
             </Form.Group>

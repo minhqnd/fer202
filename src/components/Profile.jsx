@@ -88,6 +88,7 @@ function Profile() {
       await updateUser(user.id, updatedUser);
 
       localStorage.setItem("currentUser", JSON.stringify(updatedUser));
+      window.dispatchEvent(new Event("authChange"));
 
       setUser(updatedUser);
       setMessage("Cập nhật thông tin thành công.");

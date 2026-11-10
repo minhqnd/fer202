@@ -66,6 +66,7 @@ function FoodDetail() {
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
+    window.dispatchEvent(new Event("cartChange"));
     setMessage("Đã thêm món ăn vào giỏ hàng!");
   };
 

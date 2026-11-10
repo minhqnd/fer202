@@ -32,6 +32,22 @@ function Checkout() {
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart") || "[]"));
 
+    try {
+      const savedUser = JSON.parse(
+        localStorage.getItem("currentUser") || "null",
+      );
+      if (savedUser) {
+        setForm((prev) => ({
+          ...prev,
+          customerName: savedUser.fullName || savedUser.username || "",
+          customerPhone: savedUser.phone || "",
+          deliveryAddress: savedUser.address || "",
+        }));
+      }
+    } catch {
+      // Ignore JSON error
+    }
+
     getVouchers()
       .then((response) => setVouchers(response.data))
       .catch(() => setMessage("Không thể tải danh sách voucher."));
@@ -111,9 +127,13 @@ function Checkout() {
     setMessage("");
 
     try {
+      const savedUser = JSON.parse(
+        localStorage.getItem("currentUser") || "null",
+      );
+
       const order = {
         orderCode: `ORD-${Date.now()}`,
-        userId: null,
+        userId: savedUser?.id || null,
         customerName: form.customerName.trim(),
         customerPhone: form.customerPhone.trim(),
         deliveryAddress: form.deliveryAddress.trim(),
@@ -138,6 +158,7 @@ function Checkout() {
       await createOrder(order);
 
       localStorage.removeItem("cart");
+      window.dispatchEvent(new Event("cartChange"));
       navigate("/orders");
     } catch (error) {
       setMessage("Đặt hàng thất bại. Vui lòng thử lại.");
